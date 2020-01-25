@@ -53,12 +53,12 @@ function range(){
 }
 
 function order(){
-    var first = parseFloat(num1.value);
-    var second = parseFloat(num2.value);
-    var third = parseFloat(num3.value);
-    var fourth = parseFloat(num4.value);
-    var fifth = parseFloat(num5.value);
-    var sixth = parseFloat(num6.value);
+    var first = parseFloat(doc1.value);
+    var second = parseFloat(doc2.value);
+    var third = parseFloat(doc3.value);
+    var fourth = parseFloat(doc4.value);
+    var fifth = parseFloat(doc5.value);
+    var sixth = parseFloat(doc6.value);
 
     var o1 = 1;
     var o2 = 1;
@@ -131,3 +131,6 @@ function order(){
 
     output.innerHTML = "order is this: " + o1 + ", " + o2 + ", " + o3 + ", " + o4 + ", " + o5 + ", " + o6;
 }
+
+
+
