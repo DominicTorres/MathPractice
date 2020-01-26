@@ -220,12 +220,14 @@ function middle(){
     var fourth = parseFloat(doc4.value); 
     var fifth = parseFloat(doc5.value); 
     var sixth = parseFloat(doc6.value);
+
     var one = 0;
     var two = 0;
     var three = 0;
     var four = 0;
     var five = 0;
     var six = 0;
+
     one = Math.min(first, second, third, fourth, fifth, sixth);
     if(one === first){
         first = second;
@@ -297,11 +299,24 @@ function middle(){
         first = second;
     }
     six = first;
+
     var middle = (three + four) / 2;
+
     output.innerHTML = "The two middle terms are " + three + " and " + four + ", so the median is " + middle;
     if(output.innerHTML === "The two middle terms are NaN and NaN, so the median is NaN"){
         output.innerHTML = "I think you forgot to type in the numbers -_-"
     }
+}
+
+function duplicate(){
+    var first = parseFloat(doc1.value);
+    var second = parseFloat(doc2.value);
+    var third = parseFloat(doc3.value);
+    var fourth = parseFloat(doc4.value);
+    var fifth = parseFloat(doc5.value);
+    var sixth = parseFloat(doc6.value);
+
+    
 }
 
 
