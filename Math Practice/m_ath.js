@@ -1,3 +1,4 @@
+//Global Variables
 var doc1 = document.getElementById("first");
 var doc2 = document.getElementById("second");
 var doc3 = document.getElementById("third");
@@ -7,7 +8,7 @@ var doc6 = document.getElementById("sixth");
 var largestTotal = Math.max(first, second, third, fourth, fifth, sixth);
 var smallestTotal = Math.min(first, second, third, fourth, fifth, sixth);
 var output = document.getElementById("output");
-
+//This function finds the repeative number
 function mean(){
     var first = parseFloat(doc1.value);
     var second = parseFloat(doc2.value);
@@ -18,7 +19,7 @@ function mean(){
     var meanTotal = (first + second + third + fourth + fifth + sixth) / 6;
     output.innerHTML = " The mean of these numbers is " + meanTotal;
 }
-
+//This function finds the largest number out of all inputs
 function largestNumber(){
     var first = parseFloat(doc1.value);
     var second = parseFloat(doc2.value);
@@ -29,7 +30,7 @@ function largestNumber(){
     var largestTotal = Math.max(first, second, third, fourth, fifth, sixth);
     output.innerHTML = " The largest number is " + largestTotal;
 }
-
+//This function finds the smallest number out of all inputs
 function smallestNumber(){
     var first = parseFloat(doc1.value);
     var second = parseFloat(doc2.value);
@@ -40,7 +41,7 @@ function smallestNumber(){
     var smallestTotal = Math.min(first, second, third, fourth, fifth, sixth);
     output.innerHTML = " The smallest number is " + smallestTotal;
 }
-
+//This function finds the difference between the lowest and highest values
 function range(){
     var first = parseFloat(doc1.value);
     var second = parseFloat(doc2.value);
@@ -51,7 +52,7 @@ function range(){
     var rangeTotal = (Math.max(first, second, third, fourth, fifth, sixth) - Math.min(first, second, third, fourth, fifth, sixth));
     output.innerHTML = " The range is " + rangeTotal;
 }
-
+//This function finds the order of the inputs from least to greatest
 function order(){
     var first = parseFloat(doc1.value);
     var second = parseFloat(doc2.value);
@@ -131,7 +132,7 @@ function order(){
 
     output.innerHTML = "order is this: " + o1 + ", " + o2 + ", " + o3 + ", " + o4 + ", " + o5 + ", " + o6;
 }
-
+//This function finds the input that appears most often
 function mode(){
     var one = parseFloat(doc1.value); 
     var two = parseFloat(doc2.value); 
@@ -212,7 +213,7 @@ function mode(){
         output.innerHTML = "mode is " + six + " and it appeared " + max + " number of times"; 
     }
 }
-
+//This function finds mode and median from the inputs
 function middle(){
     var first = parseFloat(doc1.value); 
     var second = parseFloat(doc2.value); 
@@ -318,6 +319,4 @@ function duplicate(){
 
     
 }
-
-
 
